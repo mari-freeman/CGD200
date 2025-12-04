@@ -1,0 +1,364 @@
+/* ---------- GLOBAL ---------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  background-color: #0f0f0f;   /* predominant black */
+  color: #eeeeee;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* ---------- HEADER & NAV ---------- */
+
+.site-header {
+  background-color: #111111;
+  border-bottom: 1px solid #222222;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+
+/* logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.logo-text {
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+}
+
+/* nav */
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 16px;
+}
+
+.main-nav a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.main-nav a:hover {
+  color: #ffffff;
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+  padding: 40px 0 32px;
+  background-color: #0f0f0f;
+}
+
+.hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.hero-text {
+  flex: 1 1 360px;
+}
+
+.hero-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #aaaaaa;
+  margin: 0 0 4px;
+}
+
+.hero-text h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.3rem;
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+.hero-text p {
+  max-width: 640px;
+  line-height: 1.7;
+  margin: 6px 0;
+  color: #dddddd;
+}
+
+.hero-subtext {
+  font-style: italic;
+  color: #bdbdbd;
+}
+
+.hero-buttons {
+  margin-top: 16px;
+}
+
+/* hero side card */
+.hero-media {
+  flex: 1 1 260px;
+  display: flex;
+  align-items: stretch;
+}
+
+.hero-card {
+  background-color: #151515;
+  border-radius: 10px;
+  border: 1px solid #2b2b2b;
+  padding: 14px 16px 18px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.7);
+  width: 100%;
+}
+
+.hero-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.hero-card-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #aaaaaa;
+}
+
+.hero-card-tag {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid #3a3a3a;
+  color: #dddddd;
+}
+
+.hero-card-title {
+  margin: 6px 0 4px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.hero-card-text {
+  margin: 0 0 10px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.hero-card-link {
+  font-size: 0.9rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hero-card-link:hover {
+  text-decoration: underline;
+}
+
+/* ---------- BUTTONS ---------- */
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+}
+
+.btn.primary {
+  background-color: #ffffff;
+  color: #111111;
+  font-weight: 600;
+}
+
+.btn.primary:hover {
+  background-color: #dcdcdc;
+}
+
+.btn.ghost {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.btn.ghost:hover {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+/* ---------- ASSIGNMENTS SECTION ---------- */
+
+.assignments {
+  background-color: #111111;
+  padding: 36px 0 40px;
+  border-top: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+}
+
+.section-heading {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.section-heading h2 {
+  margin: 0 0 6px;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #ffffff;
+}
+
+.section-heading p {
+  margin: 0;
+  color: #cccccc;
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+.assignment-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.assignment-card {
+  flex: 1 1 260px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  border: 1px solid #2b2b2b;
+  padding: 18px 18px 22px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.65);
+}
+
+.assignment-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #aaaaaa;
+  margin: 0 0 2px;
+}
+
+.assignment-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.assignment-text {
+  margin: 0 0 10px;
+  line-height: 1.7;
+  color: #d0d0d0;
+  font-size: 0.95rem;
+}
+
+.assignment-meta {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+  font-size: 0.85rem;
+  color: #bdbdbd;
+}
+
+.assignment-meta li {
+  margin-bottom: 4px;
+}
+
+/* ---------- ABOUT SECTION ---------- */
+
+.about-section {
+  padding: 36px 0 40px;
+  background-color: #0f0f0f;
+}
+
+.about-inner h2 {
+  margin: 0 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #ffffff;
+}
+
+.about-inner p {
+  max-width: 720px;
+  line-height: 1.7;
+  color: #dddddd;
+  margin: 6px 0;
+}
+
+/* ---------- FOOTER ---------- */
+
+.site-footer {
+  background-color: #111111;
+  border-top: 1px solid #222222;
+  padding: 12px 0;
+}
+
+.footer-inner {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #aaaaaa;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+  }
+
+  .assignment-grid {
+    flex-direction: column;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}

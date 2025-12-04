@@ -1,0 +1,87 @@
+/* Page basics */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+/* Header at the top */
+.site-header {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 24px 12px;
+}
+
+.site-header h1 {
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.site-header h2 {
+  margin: 4px 0;
+  font-weight: normal;
+}
+
+.tagline {
+  margin: 4px 0 0 0;
+  font-style: italic;
+  color: #cc3300;
+  font-weight: normal;
+}
+
+/* Main content wrapper */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* About section */
+.about p {
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 12px;
+}
+
+.quirk {
+  display: inline-block;
+  margin-top: 6px;
+  font-style: italic;
+  font-weight: bold;
+  color: #cc3300;
+}
+
+/* Photos section */
+.photos {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.photos h3 {
+  text-align: center;
+  margin-top: 0;
+  text-transform: lowercase;
+}
+
+.gallery {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  margin: 6px;
+  border-radius: 6px;
+}
+
+/* Closing line under photos */
+.invite {
+  text-align: center;
+  margin-top: 16px;
+  font-weight: bold;
+  color: #004080;
+}
